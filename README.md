@@ -1,16 +1,82 @@
-# React + Vite
+# Smart Email Writer – Frontend (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 About The Project
+The **Smart Email Writer Frontend** is a React application that provides a user-friendly interface for generating professional email content.  
+It works by interacting with a backend API (Spring Boot) that processes your input and returns a formatted email response. :contentReference[oaicite:0]{index=0}
 
-Currently, two official plugins are available:
+This repository contains only the **frontend part** of the full-stack Smart Email Writer project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🧠 Features
+✔ Take user input for email content  
+✔ Choose a desired tone (e.g., friendly, professional)  
+✔ Call backend API to generate polished email replies  
+✔ Display formatted email results  
+✔ Simple and responsive React UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
+- **React** (JavaScript)  
+- **Axios** for API requests  
+- **Vite** for fast development & build  
+- **CSS / HTML** for styling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📥 Installation & Setup
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/guptaprity/smart-email-writer-frontend.git
+```
+
+### 2. Navigate into project
+```   
+cd smart-email-writer-frontend
+```
+## 4. Install dependencies
+```
+npm install
+```
+## 5. Start the app
+```
+npm start
+```
+
+✨ The app should open in the browser at:
+```
+http://localhost:3000
+```
+🔗 Backend API Requirement
+
+This frontend app needs the Spring Boot backend running
+to function properly.
+
+API Endpoint:
+```
+POST http://localhost:8080/api/email/generate
+```
+
+If the backend is not running, the frontend will not be able to generate emails.
+
+### 🧩 Project Structure
+public/        → Static files  
+src/           → React components & logic  
+.gitignore     → Ignored files (node_modules, build, etc.)  
+package.json   → Project settings & dependencies  
+
+### 📌 Future Improvements
+
+✔ Add tone dropdown (professional, casual, formal, etc.)
+✔ Add error handling UI
+✔ Input validation
+✔ Deploy frontend (Netlify / Vercel)
+✔ Connect to deployed backend API
+
+
+## Prity Kumari
+📍 Frontend Developer (React)
+GitHub: https://github.com/guptaprity
+
